@@ -1,0 +1,83 @@
+.slider div,
+.slider ul,
+.slider li,
+.slider a,
+.slider button,
+.slider img {
+  padding: 0;
+  margin: 0;
+}
+.slider li {
+  list-style: none;
+}
+.slider button {
+  outline: 0;
+}
+
+.slider {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.slider .slide-viewer {
+  overflow: hidden;
+  height: 300px;
+}
+.slider .slide-group {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slider .slide {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.slider .slide:first-child {
+  display: block;
+}
+
+.slider .slide-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  background-color: #fff;
+  opacity: .1;
+  cursor: pointer;
+}
+.slider .slide-btn:hover {
+  opacity: .3;
+}
+.slider .slide-btn.slide-btn-prev {
+  left: 5px; top: 50%;
+  margin-top: -15px;
+}
+.slider .slide-btn.slide-btn-next {
+  right: 5px; top: 50%;
+  margin-top: -15px;
+}
+
+.slider .slide-bullets {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 16px;
+  text-align: center;
+}
+.slider .slide-bullets > .slide-bullet {
+  padding: 0 5px;
+  border: none;
+  background: none;
+  font-size: 32px;
+  line-height: .5;
+  color: #fff;
+  cursor: pointer;
+}
+.slide-bullets > .slide-bullet.active,
+.slide-bullets > .slide-bullet:hover {
+  color: darkslateblue;
+}
